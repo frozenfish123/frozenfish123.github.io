@@ -1,105 +1,123 @@
-if (!!$.prototype.justifiedGallery) { // if justifiedGallery method is defined
-    var options = {
-        rowHeight: 140,
-        margins: 4,
-        lastRow: 'justify'
-    };
-    $('.article-gallery').justifiedGallery(options);
+// 监听滚动事件
+function listenScroll(callback) {
+  // eslint-disable-next-line no-undef
+  const dbc = new Debouncer(callback);
+  window.addEventListener('scroll', dbc, false);
+  dbc.handleEvent();
 }
 
+// 滚动到指定元素
+function scrollToElement(target, offset) {
+  var scroll_offset = $(target).offset();
+  $('body,html').animate({
+    scrollTop: scroll_offset.top + (offset || 0),
+    easing   : 'swing'
+  });
+}
 
-$(window).load(function() {
-    
-       $("#wrapper").fadeTo("slow",1);
-       $("#blogtitel").fadeOut(2000);
-});
+// 顶部菜单的监听事件
+function navbarScrollEvent() {
+  var navbar = $('#navbar');
+  var submenu = $('#navbar .dropdown-menu');
+  if (navbar.offset().top > 0) {
+    navbar.removeClass('navbar-dark');
+    submenu.removeClass('navbar-dark');
+  }
+  listenScroll(function() {
+    navbar[navbar.offset().top > 50 ? 'addClass' : 'removeClass']('top-nav-collapse');
+    submenu[navbar.offset().top > 50 ? 'addClass' : 'removeClass']('dropdown-collapse');
+    if (navbar.offset().top > 0) {
+      navbar.removeClass('navbar-dark');
+      submenu.removeClass('navbar-dark');
+    } else {
+      navbar.addClass('navbar-dark');
+      submenu.removeClass('navbar-dark');
+    }
+  });
+  $('#navbar-toggler-btn').on('click', function() {
+    $('.animated-icon').toggleClass('open');
+    $('#navbar').toggleClass('navbar-col-show');
+  });
+}
+
+// 头图视差的监听事件
+function parallaxEvent() {
+  var target = $('#background[parallax="true"]');
+  var parallax = function() {
+    var oVal = $(window).scrollTop() / 5;
+    var offset = parseInt($('#board').css('margin-top'), 0);
+    var max = 96 + offset;
+    if (oVal > max) {
+      oVal = max;
+    }
+    target.css({
+      transform          : 'translate3d(0,' + oVal + 'px,0)',
+      '-webkit-transform': 'translate3d(0,' + oVal + 'px,0)',
+      '-ms-transform'    : 'translate3d(0,' + oVal + 'px,0)',
+      '-o-transform'     : 'translate3d(0,' + oVal + 'px,0)'
+    });
+
+    var toc = $('#toc');
+    if (toc) {
+      $('#toc-ctn').css({
+        'padding-top': oVal + 'px'
+      });
+    }
+  };
+  if (target.length > 0) {
+    listenScroll(parallax);
+  }
+}
+
+// 向下滚动箭头的监听事件
+function scrollDownArrowEvent() {
+  $('.scroll-down-bar').on('click', function() {
+    scrollToElement('#board', -$('#navbar').height());
+  });
+}
+
+// 向顶部滚动箭头的监听事件
+function scrollTopArrowEvent() {
+  var topArrow = $('#scroll-top-button');
+  if (!topArrow) {
+    return;
+  }
+  var posDisplay = false;
+  var scrollDisplay = false;
+  // 位置
+  var setTopArrowPos = function() {
+    var boardRight = document.getElementById('board').getClientRects()[0].right;
+    var bodyWidth = document.body.offsetWidth;
+    var right = bodyWidth - boardRight;
+    posDisplay = right >= 50;
+    topArrow.css({
+      'bottom': posDisplay && scrollDisplay ? '20px' : '-60px',
+      'right' : right - 64 + 'px'
+    });
+  };
+  setTopArrowPos();
+  $(window).resize(setTopArrowPos);
+  // 显示
+  var headerHeight = $('#board').offset().top;
+  listenScroll(function() {
+    var scrollHeight = document.body.scrollTop + document.documentElement.scrollTop;
+    scrollDisplay = scrollHeight >= headerHeight;
+    topArrow.css({
+      'bottom': posDisplay && scrollDisplay ? '20px' : '-60px'
+    });
+  });
+  // 点击
+  topArrow.on('click', function() {
+    $('body,html').animate({
+      scrollTop: 0,
+      easing   : 'swing'
+    });
+  });
+}
 
 $(document).ready(function() {
-
-
-    $(window).on('scroll', function() {
-
-        var z = $(".banner")[0].getBoundingClientRect().bottom / (
-            $(".banner")[0].getBoundingClientRect().bottom - $(".banner")[0].getBoundingClientRect().top)
-
-        if (z < 0) {
-            z = 0.01
-        }
-
-        $(".wrapper")[0].style.zoom = z
-        $(".wrapper")[0].style.MozTransform = "scale(" + z + ")"
-
-    });
-
-    $("#menu-icon, #menu-icon-tablet").click(function() {
-        if ($('#menu').css('visibility') == 'hidden') {
-            $('#menu').css('visibility', 'visible');
-            $('#menu-icon, #menu-icon-tablet').addClass('active');
-
-            var topDistance = $("#menu > #nav").offset().top;
-
-            $("#menu > #nav").show();
-            return false;
-        } else {
-            $('#menu').css('visibility', 'hidden');
-            $('#menu-icon, #menu-icon-tablet').removeClass('active');
-
-            return false;
-        }
-    });
-
-    /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
-    $("#header > #nav > ul > .icon").click(function() {
-        $("#header > #nav > ul").toggleClass("responsive");
-    });
-
-    if ($("#menu").length) {
-        $(window).on('scroll', function() {
-            var topDistance = $(window).scrollTop();
-
-            if ($('#menu').css('visibility') != 'hidden' && topDistance < 10) {
-                $("#menu > #nav").show();
-            } else if ($('#menu').css('visibility') != 'hidden' && topDistance > 10) {
-                $("#menu > #nav").hide();
-            }
-
-            if (!$("#menu-icon").is(":visible") && topDistance < 10) {
-
-                $("#menu-icon-tablet").show();
-                $("#top-icon-tablet").hide();
-            } else if (!$("#menu-icon").is(":visible") && topDistance > 10) {
-
-                $("#menu-icon-tablet").hide();
-                $("#top-icon-tablet").show();
-            }
-        });
-    }
-
-    if ($("#footer-post").length) {
-        var lastScrollTop = 0;
-        $(window).on('scroll', function() {
-            var topDistance = $(window).scrollTop();
-
-            if (topDistance > lastScrollTop) {
-                // downscroll code
-                $("#footer-post").hide();
-            } else {
-                // upscroll code
-                $("#footer-post").show();
-            }
-            lastScrollTop = topDistance;
-
-            $("#nav-footer").hide();
-            $("#toc-footer").hide();
-            $("#share-footer").hide();
-
-            if (topDistance < 50) {
-                $("#actions-footer > ul > #top").hide();
-                $("#actions-footer > ul > #menu").show();
-            } else if (topDistance > 100) {
-                $("#actions-footer > ul > #menu").hide();
-                $("#actions-footer > ul > #top").show();
-            }
-        });
-    }
+  navbarScrollEvent();
+  parallaxEvent();
+  scrollDownArrowEvent();
+  scrollTopArrowEvent();
 });
