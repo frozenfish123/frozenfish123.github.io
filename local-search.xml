@@ -4,63 +4,11 @@
   
   
   <entry>
-    <title>设计师选购电脑指南</title>
-    <link href="/2020/12/05/%E7%AC%94%E8%AE%B0%E6%9C%AC%E9%80%89%E8%B4%AD%E7%BB%8F%E9%AA%8C/"/>
-    <url>/2020/12/05/%E7%AC%94%E8%AE%B0%E6%9C%AC%E9%80%89%E8%B4%AD%E7%BB%8F%E9%AA%8C/</url>
+    <title>疫情期间微博热词分析</title>
+    <link href="/2020/12/17/%E7%96%AB%E6%83%85%E6%9C%9F%E9%97%B4%E5%BE%AE%E5%8D%9A%E7%83%AD%E8%AF%8D%E5%88%86%E6%9E%90/"/>
+    <url>/2020/12/17/%E7%96%AB%E6%83%85%E6%9C%9F%E9%97%B4%E5%BE%AE%E5%8D%9A%E7%83%AD%E8%AF%8D%E5%88%86%E6%9E%90/</url>
     
-    <content type="html"><![CDATA[]]></content>
-    
-    
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title>设计师必备软件介绍</title>
-    <link href="/2020/12/05/%E8%AE%BE%E8%AE%A1%E5%B8%88%E5%BF%85%E5%A4%87%E8%BD%AF%E4%BB%B6%E8%B0%83%E7%A0%94/"/>
-    <url>/2020/12/05/%E8%AE%BE%E8%AE%A1%E5%B8%88%E5%BF%85%E5%A4%87%E8%BD%AF%E4%BB%B6%E8%B0%83%E7%A0%94/</url>
-    
-    <content type="html"><![CDATA[<p>宏观上，把软件分为核心（不同设计都要用、外行内行都要用）和周边（分门别类的设计师进行使用）两大类。<br>微观上，对软件的版本、功能、特性、硬件需求、学习难度评级进行总结。</p><h1 id="软件分类"><a href="#软件分类" class="headerlink" title="软件分类"></a>软件分类</h1><h2 id="核心软件"><a href="#核心软件" class="headerlink" title="核心软件"></a>核心软件</h2><ul><li><h2 id="进阶软件"><a href="#进阶软件" class="headerlink" title="进阶软件"></a>进阶软件</h2></li></ul>]]></content>
-    
-    
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title>交互设计</title>
-    <link href="/2020/12/05/%E4%BA%A4%E4%BA%92%E8%AE%BE%E8%AE%A1/"/>
-    <url>/2020/12/05/%E4%BA%A4%E4%BA%92%E8%AE%BE%E8%AE%A1/</url>
-    
-    <content type="html"><![CDATA[]]></content>
-    
-    
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title>我的hexo学习笔记</title>
-    <link href="/2020/12/05/hexo%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
-    <url>/2020/12/05/hexo%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
-    
-    <content type="html"><![CDATA[<ol><li><p>ERROR Theme config load failed.<br>ERROR {<br>err: YAMLException: can not read an implicit mapping pair; a colon is missed at line 188, column 47:</p><pre><code>... come to Frozenfish&#39;s homepage&#39;  # 为空则按 hexo config.subtitle 显示</code></pre><p>主要问题是Frozenfish’s的引号和后面的重复了。<br>（如果一定要在里面出现单引号怎么办？）</p></li><li><p>如何更改fluid主题页的图片和打字机效果的文字</p><ol><li>修改打字机文字：theme文件-config.yml-index-slogan-修改文字即可。需要注意的是一些特殊字符。</li><li>修改图片：<ul><li>图片路径注意转义字符是左斜杠/而不是右斜杠\，路径要按照格式来</li></ul></li></ol></li><li><p>hexo部署的延迟问题</p></li></ol>]]></content>
-    
-    
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title>Design Thinking - Resources</title>
-    <link href="/2020/12/03/design%20thinking%E5%85%A5%E9%97%A8%E4%B9%A6%E5%8D%95/"/>
-    <url>/2020/12/03/design%20thinking%E5%85%A5%E9%97%A8%E4%B9%A6%E5%8D%95/</url>
-    
-    <content type="html"><![CDATA[<p><a href="https://book.douban.com/subject/4183885/">https://book.douban.com/subject/4183885/</a>  Design Thinking<br><a href="https://book.douban.com/subject/6960736/">https://book.douban.com/subject/6960736/</a>  Graphic Design Thnking<br><a href="https://book.douban.com/subject/7963151/">https://book.douban.com/subject/7963151/</a>  Computational Design Thinking<br><a href="https://book.douban.com/subject/5397784/">https://book.douban.com/subject/5397784/</a>  Service Design Thinking</p>]]></content>
+    <content type="html"><![CDATA[<h1 id="scrapy框架简介"><a href="#scrapy框架简介" class="headerlink" title="scrapy框架简介"></a>scrapy框架简介</h1><ul><li><a href="https://scrapy.org/">scrapy</a>是一个开源的数据挖掘框架。</li><li>这个框架主要实现的功能是从网页上下载所需要的信息。</li><li>其原理，简单来讲，是通过模拟登陆，来模拟人眼观看信息的行为，然后收集所需信息。</li><li>框架共有五个组件：引擎（scrapy engine，控制整个爬虫工作的进程）、爬虫（spider，用于从特定网页获取所需信息）、实体管道（item pipeline，处理爬虫获取的实体（entity），主要处理的方法是持久化实体、验证实体有效性、清除不需要的信息）、调度器（scheduler、是爬取网址的队列，决定爬的顺序/优先级）、下载器（downloader，下载网络数据）。</li><li>这五个部分的运行流程是（与人的上网行为相对应）：</li></ul><ol><li>spider-request-URL-engine-scheduler（人类输入网址，请求访问）</li><li>schedule排序-engine-Downloader（多个网址，排列访问的优先级，然后请求下载相关数据）</li><li>Downloader-request-internet-engine（从互联网下载的信息交给人脑）</li><li>response-spider-engine（人类处理信息）</li><li>engine-pipeline（人脑决定将这些数据放在某处（pipeline）保存）</li></ol><ul><li>scrapy中间件介绍：<br>  scrapy有两个中间件，一个连接的是engine和downloader，一个连接的是engine和spider，前者负责加工信息（给访问请求加上cookie等，便于更逼真地模拟访问），后者负责过滤信息（滤掉无效信息）。</li></ul><h1 id="如何用scrapy挖掘微博热词"><a href="#如何用scrapy挖掘微博热词" class="headerlink" title="如何用scrapy挖掘微博热词"></a>如何用scrapy挖掘微博热词</h1>]]></content>
     
     
     
@@ -86,7 +34,7 @@
     <link href="/2020/10/11/%E7%8E%B0%E4%BB%A3%E6%80%A7%E7%9A%84%E7%BB%88%E7%BB%93/"/>
     <url>/2020/10/11/%E7%8E%B0%E4%BB%A3%E6%80%A7%E7%9A%84%E7%BB%88%E7%BB%93/</url>
     
-    <content type="html"><![CDATA[<h1 id="阅读准备"><a href="#阅读准备" class="headerlink" title="阅读准备"></a>阅读准备</h1><ul><li>版本选择（豆瓣链接：<a href="https://book.douban.com/subject/25790879/%EF%BC%89%EF%BC%9AISBN">https://book.douban.com/subject/25790879/）：ISBN</a> 978-7-100-10105-9</li><li>作者简介（维基百科：<a href="https://en.wikipedia.org/wiki/Gianni_Vattimo%EF%BC%89%EF%BC%9AItaly%EF%BC%8C1936-%EF%BC%8C#%E5%90%8C%E6%80%A7%E6%81%8B#">https://en.wikipedia.org/wiki/Gianni_Vattimo）：Italy，1936-，#同性恋#</a> #激进党# #存在主义# #虚无主义者#</li><li>书籍结构：解释学译从-&gt;本书=英译者导论+导言+Part1+Part2+Part3+文献说明+索引</li><li>思考问题：作者在什么背景下提出“现代性的终结”？此论断是什么含义，又为何作出这样的论断？现代性终结之后走向哪里？</li></ul><h1 id="解释学译丛序言"><a href="#解释学译丛序言" class="headerlink" title="解释学译丛序言"></a>解释学译丛序言</h1><ol><li>代表人物：施莱尔·马赫、海德格尔、伽达默尔</li><li>学科转向：方法论（-施莱尔马赫）-&gt;本体论</li><li>与我国传统经学的关系</li><li>伽达默尔：解释学是一门实践哲学（理论+实践），不仅是方法<ul><li>《诠释学和意识形态》（1971）</li></ul></li></ol><h1 id="英译者导论"><a href="#英译者导论" class="headerlink" title="英译者导论"></a>英译者导论</h1><h1 id="导言"><a href="#导言" class="headerlink" title="导言"></a>导言</h1><ol><li>本书的研究对象：尼采&amp;海德格尔； 研究范畴：现代-后现代话语关系； 研究时段：20世纪早期；研究领域：文化批判；出版时间：1985</li><li>尼采（<a href="https://en.wikipedia.org/wiki/Friedrich_Nietzsche%EF%BC%89%EF%BC%9A">https://en.wikipedia.org/wiki/Friedrich_Nietzsche）：</a></li></ol><ul><li>虚无主义</li></ul><ol start="3"><li>海德格尔（）：</li></ol><ul><li>人道主义批判</li></ul><ol start="4"><li>什么是“话语”？为什么要研究“话语”？</li><li>后现代为什么称之为“后”现代？</li><li>稳定性的消解？历史的消解意味着整体性的崩溃，但并不意味着历史将简单地走向终结。</li><li>历史的消解是最能把当代历史与现代历史区别开来的特性</li><li>本书的主题之一：开启一种非形而上学的真理概念，不以科学实证主义而是以艺术经验&amp;修辞学模式解释真理</li><li>“共同感”</li><li>真理的主观性</li><li>经验真理的视域</li></ol><h1 id="第一部分-作为命运的虚无主义"><a href="#第一部分-作为命运的虚无主义" class="headerlink" title="第一部分 作为命运的虚无主义"></a>第一部分 作为命运的虚无主义</h1><h2 id="1-为虚无主义辩护"><a href="#1-为虚无主义辩护" class="headerlink" title="1 为虚无主义辩护"></a>1 为虚无主义辩护</h2><ol><li>虚无主义是一种对中心的消解</li><li>完成的虚无主义</li></ol><h2 id="2-人道主义的危机"><a href="#2-人道主义的危机" class="headerlink" title="2 人道主义的危机"></a>2 人道主义的危机</h2><ol start="3"><li>艺术的死亡或衰退<br> 讨论的出发点：大众媒介与绝对精神的反常现实化<ul><li>黑格尔-发达工业社会-艺术必死</li><li>阿多诺-传播手段你普遍化-精神乌托邦-精神与实在难以区分-绝对精神反常现实化<blockquote><p>印刷（包括图书、小册、报纸、杂志等）：自十五世纪后期开始。<br>录音（包括黑胶唱片、磁带、卡式录音带、CD、DVD等）：自十九世纪后期开始。<br>电影约从1900年开始。<br>电台广播约从1910年开始。<br>电视约从1950年开始。<br>互联网约从1990年开始。<br>移动电话约从2000年开始。<br>知识点：</p></blockquote></li><li>什么是绝对精神：不靠现实物质，从自己的心灵构筑出来的一个世界。（柏拉图理念界？）</li><li></li></ul></li><li>诗语的破碎<ul><li>作者：海德格尔（词句破裂处，存在出现）-不认为存在本身可以独立于语言中介-诗语引导我们到事物本身</li></ul></li></ol><h1 id="第二部分-艺术的真理"><a href="#第二部分-艺术的真理" class="headerlink" title="第二部分 艺术的真理"></a>第二部分 艺术的真理</h1><h2 id="3-艺术的死亡或衰退"><a href="#3-艺术的死亡或衰退" class="headerlink" title="3 艺术的死亡或衰退"></a>3 艺术的死亡或衰退</h2><h2 id="4-诗语的破碎"><a href="#4-诗语的破碎" class="headerlink" title="4 诗语的破碎"></a>4 诗语的破碎</h2><h2 id="5-装饰-纪念碑"><a href="#5-装饰-纪念碑" class="headerlink" title="5 装饰/纪念碑"></a>5 装饰/纪念碑</h2><h2 id="6-艺术革命的结构"><a href="#6-艺术革命的结构" class="headerlink" title="6 艺术革命的结构"></a>6 艺术革命的结构</h2><h1 id="第三部分-现代性的终结"><a href="#第三部分-现代性的终结" class="headerlink" title="第三部分 现代性的终结"></a>第三部分 现代性的终结</h1><h2 id="7-诠释学与虚无主义"><a href="#7-诠释学与虚无主义" class="headerlink" title="7 诠释学与虚无主义"></a>7 诠释学与虚无主义</h2><h2 id="8-真理与诠释学本体论修辞学"><a href="#8-真理与诠释学本体论修辞学" class="headerlink" title="8 真理与诠释学本体论修辞学"></a>8 真理与诠释学本体论修辞学</h2><h2 id="9-诠释学与人类学"><a href="#9-诠释学与人类学" class="headerlink" title="9 诠释学与人类学"></a>9 诠释学与人类学</h2><h2 id="10-虚无主义与哲学后现代"><a href="#10-虚无主义与哲学后现代" class="headerlink" title="10 虚无主义与哲学后现代"></a>10 虚无主义与哲学后现代</h2><hr>]]></content>
+    <content type="html"><![CDATA[<h1 id="阅读准备"><a href="#阅读准备" class="headerlink" title="阅读准备"></a>阅读准备</h1><ul><li>版本选择（豆瓣链接：<a href="https://book.douban.com/subject/25790879/%EF%BC%89%EF%BC%9AISBN">https://book.douban.com/subject/25790879/）：ISBN</a> 978-7-100-10105-9</li><li>作者简介（维基百科：<a href="https://en.wikipedia.org/wiki/Gianni_Vattimo%EF%BC%89%EF%BC%9AItaly%EF%BC%8C1936-%EF%BC%8C#%E5%90%8C%E6%80%A7%E6%81%8B#">https://en.wikipedia.org/wiki/Gianni_Vattimo）：Italy，1936-，#同性恋#</a> #激进党# #存在主义# #虚无主义者#</li><li>书籍结构：解释学译从-&gt;本书=英译者导论+导言+Part1+Part2+Part3+文献说明+索引</li><li>思考问题：作者在什么背景下提出“现代性的终结”？此论断是什么含义，又为何作出这样的论断？现代性终结之后走向哪里？</li></ul><h1 id="解释学译丛序言"><a href="#解释学译丛序言" class="headerlink" title="解释学译丛序言"></a>解释学译丛序言</h1><ol><li>代表人物：施莱尔·马赫、海德格尔、伽达默尔</li><li>学科转向：方法论（-施莱尔马赫）-&gt;本体论</li><li>与我国传统经学的关系</li><li>伽达默尔：解释学是一门实践哲学（理论+实践），不仅是方法<ul><li>《诠释学和意识形态》（1971）</li></ul></li></ol><h1 id="阅读前的只是准备"><a href="#阅读前的只是准备" class="headerlink" title="阅读前的只是准备"></a>阅读前的只是准备</h1><h2 id="尼采-权力意志"><a href="#尼采-权力意志" class="headerlink" title="尼采 权力意志"></a>尼采 权力意志</h2><h2 id="海德格尔-存在与时间"><a href="#海德格尔-存在与时间" class="headerlink" title="海德格尔 存在与时间"></a>海德格尔 存在与时间</h2><h1 id="英译者导论"><a href="#英译者导论" class="headerlink" title="英译者导论"></a>英译者导论</h1><p>英译者导论非常重要，值得好好阅读。</p><ol><li>“荒漠”——现象级的行为已经出现，但还没有合适的理论解释。</li><li>英译者导论主要目的：为读者提供一些语境化的，关于尼采和海德格尔的瓦蒂莫阐释。（也可参见他的文章）</li><li>微弱思想（weak thought）</li><li>尼采《权力意志》第一卷：虚无主义正站在门口：这个最不可思议的客人究竟从何而来？-本书中心问题</li><li>欧洲虚无主义-真理被消解-变成价值-采取了人类的信仰和意志的形式/权力意志<ul><li>如何理解“真理被消解成为价值”，采取了权力意志的形式？</li></ul></li><li>虚无主义目标=剖析和消解传统形而上学思想的所有真理主张</li><li>虚无主义：对真理的幻觉</li><li>虚无主义与差异哲学：差异哲学-消除区别</li><li>海德格尔和尼采对差异哲学的区别态度：</li><li>人道主义=形而上学，瓦蒂莫的技术阐释，海德格尔技术哲学</li><li>艺术不再是传统意义上的艺术：艺术产品不再是传统意义上的艺术作品，而是和大众传媒塑造的图像世界绑定在一起</li><li>与德里达相类似的解构策略</li><li>各章导引：<ol><li>诠释与虚无主义（1981，耶鲁座谈会）：诠释学和虚无主义，在为审美意识辩护的形式中，具有深刻一致性</li><li>存在与语言之关系</li><li>真理与诠释学本体论修辞学</li><li>诠释学与人类学：文化人类学 </li><li>虚无主义与哲学后现代（1984-1985）：“扭转”（海德格尔）、尼采</li></ol></li><li>后现代哲学致力于瓦解科学与审美文化之间的差异（为我的行为找到了哲学依据！），并且与质疑道瓦解一直坚持的理性主义与非理性主义之间的根本差异——即我们现在所称的“现代性”的东西</li><li>微弱思想作为一种思想风格</li><li>决定废除从神学到辩证法的所有基础形式</li></ol><h1 id="导言"><a href="#导言" class="headerlink" title="导言"></a>导言</h1><ol><li>本书的研究对象：尼采&amp;海德格尔； 研究范畴：现代-后现代话语关系； 研究时段：20世纪早期；研究领域：文化批判；出版时间：1985</li><li>尼采（<a href="https://en.wikipedia.org/wiki/Friedrich_Nietzsche%EF%BC%89%EF%BC%9A">https://en.wikipedia.org/wiki/Friedrich_Nietzsche）：</a></li></ol><ul><li>虚无主义</li></ul><ol start="3"><li>海德格尔（）：</li></ol><ul><li>人道主义批判</li></ul><ol start="4"><li>什么是“话语”？为什么要研究“话语”？</li><li>后现代为什么称之为“后”现代？</li><li>稳定性的消解？历史的消解意味着整体性的崩溃，但并不意味着历史将简单地走向终结。</li><li>历史的消解是最能把当代历史与现代历史区别开来的特性</li><li>本书的主题之一：开启一种非形而上学的真理概念，不以科学实证主义而是以艺术经验&amp;修辞学模式解释真理</li><li>“共同感”</li><li>真理的主观性</li><li>经验真理的视域</li></ol><h1 id="第一部分-作为命运的虚无主义"><a href="#第一部分-作为命运的虚无主义" class="headerlink" title="第一部分 作为命运的虚无主义"></a>第一部分 作为命运的虚无主义</h1><h2 id="1-为虚无主义辩护"><a href="#1-为虚无主义辩护" class="headerlink" title="1 为虚无主义辩护"></a>1 为虚无主义辩护</h2><ol><li>虚无主义是一种对中心的消解</li><li>完成的虚无主义</li><li></li></ol><h2 id="2-人道主义的危机"><a href="#2-人道主义的危机" class="headerlink" title="2 人道主义的危机"></a>2 人道主义的危机</h2><h1 id="第二部分-艺术的真理"><a href="#第二部分-艺术的真理" class="headerlink" title="第二部分 艺术的真理"></a>第二部分 艺术的真理</h1><h2 id="3-艺术的死亡或衰退"><a href="#3-艺术的死亡或衰退" class="headerlink" title="3 艺术的死亡或衰退"></a>3 艺术的死亡或衰退</h2><p> 讨论的出发点：大众媒介与绝对精神的反常现实化<br>    + 黑格尔-发达工业社会-艺术必死<br>    + 阿多诺-传播手段你普遍化-精神乌托邦-精神与实在难以区分-绝对精神反常现实化</p><pre><code>&gt;印刷（包括图书、小册、报纸、杂志等）：自十五世纪后期开始。 录音（包括黑胶唱片、磁带、卡式录音带、CD、DVD等）：自十九世纪后期开始。 电影约从1900年开始。 电台广播约从1910年开始。 电视约从1950年开始。 互联网约从1990年开始。 移动电话约从2000年开始。知识点：+ 什么是绝对精神：不靠现实物质，从自己的心灵构筑出来的一个世界。（柏拉图理念界？）+ </code></pre><h2 id="4-诗语的破碎"><a href="#4-诗语的破碎" class="headerlink" title="4 诗语的破碎"></a>4 诗语的破碎</h2><pre><code>+ 作者：海德格尔（词句破裂处，存在出现）-不认为存在本身可以独立于语言中介-诗语引导我们到事物本身+ 当代美学倾向于把艺术作品的重要性看得比其本质更重要+ 海德格尔：显示</code></pre><h2 id="5-装饰-纪念碑"><a href="#5-装饰-纪念碑" class="headerlink" title="5 装饰/纪念碑"></a>5 装饰/纪念碑</h2><h2 id="6-艺术革命的结构"><a href="#6-艺术革命的结构" class="headerlink" title="6 艺术革命的结构"></a>6 艺术革命的结构</h2><h1 id="第三部分-现代性的终结"><a href="#第三部分-现代性的终结" class="headerlink" title="第三部分 现代性的终结"></a>第三部分 现代性的终结</h1><h2 id="7-诠释学与虚无主义"><a href="#7-诠释学与虚无主义" class="headerlink" title="7 诠释学与虚无主义"></a>7 诠释学与虚无主义</h2><h2 id="8-真理与诠释学本体论修辞学"><a href="#8-真理与诠释学本体论修辞学" class="headerlink" title="8 真理与诠释学本体论修辞学"></a>8 真理与诠释学本体论修辞学</h2><h2 id="9-诠释学与人类学"><a href="#9-诠释学与人类学" class="headerlink" title="9 诠释学与人类学"></a>9 诠释学与人类学</h2><h2 id="10-虚无主义与哲学后现代"><a href="#10-虚无主义与哲学后现代" class="headerlink" title="10 虚无主义与哲学后现代"></a>10 虚无主义与哲学后现代</h2><hr>]]></content>
     
     
     
